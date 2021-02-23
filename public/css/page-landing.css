@@ -1,0 +1,85 @@
+#page-landing {
+    background: white;
+  
+    text-align: center;
+    min-height: 100vh;
+  
+    display: flex;
+  }
+  
+  #container {
+    margin: auto;
+    align-items: center;
+    width: min(95%, 212rem);
+  }
+  
+  .location,
+  h1,
+  .visit p {
+    height: 16vh;
+  }
+  
+  #logo {
+    animation-delay: 50ms;
+    width: 10%;
+    height: 10%;
+  }
+  
+  #colection {
+    animation-delay: 50ms;
+    width: 1100px;
+    height: 800px;
+  }
+  
+  .location {
+    animation-delay: 100ms;
+  }
+    
+  .visit p {
+    animation-delay: 200ms;
+  }
+  
+  .visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+  
+    border: none;
+    border-radius: 3rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: auto;
+  
+    transition: background 200ms;
+    animation-delay: 250ms;
+  }
+  
+  .visit a:hover {
+    background: #96feff;
+  }
+  
+  /* desktop version */
+  
+  @media (min-width: 768px) {
+    #container {
+      
+      clamp(30rem, 54vw, 56rem);
+    }
+  
+    header {
+      display: flex;
+      position: fixed;
+      align-items: left;
+      justify-content: space-between;
+      background: white;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
